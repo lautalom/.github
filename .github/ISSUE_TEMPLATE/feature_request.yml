@@ -1,0 +1,38 @@
+name: Mejora
+description: Una capacidad nueva o un cambio de comportamiento
+title: "[Mejora] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema
+      description: Qué no se puede hacer hoy y a quién le importa.
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta
+      description: El comportamiento deseado, no la implementación.
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+      description: Qué más probaste o descartaste, y por qué.
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      description: Cómo se sabe que está terminado, en pasos verificables.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Issues relacionados, documentos, capturas o números.

@@ -1,0 +1,30 @@
+name: Tarea o investigación
+description: Trabajo concreto que no es bug ni feature (investigar, medir, decidir)
+title: "[Tarea] "
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Qué hay que averiguar, decidir o hacer, en una oración.
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Lo que ya se sabe, con links a issues, PRs o docs.
+  - type: textarea
+    id: hecho
+    attributes:
+      label: Definition of done
+      description: Cómo se cierra el issue.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas
+      description: Riesgos, dependencias o lo que queda explícitamente afuera.

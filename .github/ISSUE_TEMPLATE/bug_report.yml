@@ -1,0 +1,48 @@
+name: Bug
+description: Algo no funciona como debería
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Si el bug toca datos o seguridad, no pegues tokens, documentos ni datos personales:
+        describí el caso y adjuntá solo la evidencia mínima.
+  - type: textarea
+    id: que-pasa
+    attributes:
+      label: Qué pasa
+      description: El comportamiento actual, con el error literal si hay uno.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué debería pasar
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Cómo reproducirlo
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: entorno
+    attributes:
+      label: Entorno
+      description: Sistema, versión o commit.
+      placeholder: main @ 6ec6178
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia
+      description: Salida de consola, captura o logs. Sin datos personales.
+      placeholder: |
+        ```text
+        ...
+        ```
